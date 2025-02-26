@@ -806,6 +806,18 @@ h2 {
   color: #e29e0b;
 }
 
+.text-from-first-white{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.text-from-first-white:hover {
+  color: #e29e0b;
+}
+
+
+
 /* Service Cards Grid */
 .service-cards {
   display: flex;
