@@ -791,8 +791,19 @@ h2 {
 .section-description {
   font-size: 1.1rem;
   color: #666;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto 40px;
+}
+
+/*when hovering the text of the a_href command given*/
+.text-from-first{
+  color: #747474;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.text-from-first:hover {
+  color: #e29e0b;
 }
 
 /* Service Cards Grid */
