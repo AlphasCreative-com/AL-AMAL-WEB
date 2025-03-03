@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+  let form1 = document.getElementById("contactForm");
+  let form2 = document.getElementById("contactForm-contact");
+
+  if (form1) {
+    form1.addEventListener("submit", sendEmail);
+  }
+  if (form2) {
+    form2.addEventListener("submit", sendEmailfromContact);
+  }
+});
+
 // Function to send an email form home page
 function sendEmail(event) {
   event.preventDefault();
@@ -19,8 +31,6 @@ function sendEmail(event) {
     .catch((error) => console.error("Error:", error));
 }
 
-document.getElementById("contactForm").addEventListener("submit", sendEmail);
-
 // Function to send an email from contact us page
 function sendEmailfromContact(event) {
   event.preventDefault();
@@ -28,12 +38,13 @@ function sendEmailfromContact(event) {
   let form = document.getElementById("contactForm-contact");
   let formData = new FormData(form);
 
-  // Get first name and last name values
-  let firstName = document.getElementById("firstname").value.trim();
-  let lastName = document.getElementById("lastname").value.trim();
+  // Get first name and last name from FormData
+  let firstName = formData.get("firstname")?.trim() || "";
+  let lastName = formData.get("lastname")?.trim() || "";
 
   // Concatenate them into a full name
-  let fullName = firstName + " " + lastName;
+  let fullName = `${firstName} ${lastName}`.trim();
+  formData.append("name", fullName); // Add full name to formData
 
   // Append full name to FormData (assuming backend expects "name" field)
   formData.append("name", fullName);
@@ -51,7 +62,3 @@ function sendEmailfromContact(event) {
     })
     .catch((error) => console.error("Error:", error));
 }
-
-document
-  .getElementById("contactForm-contact")
-  .addEventListener("submit", sendEmailfromContact);
