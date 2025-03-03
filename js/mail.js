@@ -5,12 +5,8 @@ function sendEmail(event) {
   let form = document.getElementById("contactForm");
   let formData = new FormData(form);
 
-  let newFormData = {
-    name: "dfdfjdlkf",
-    email: "kmihijaya@gmail.com",
-    subject: "subject",
-  }
-
+  console.log(formData);
+  
   fetch("send_email.php", {
     method: "POST",
     body: newFormData,
