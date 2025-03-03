@@ -6,6 +6,11 @@ require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/Exception.php';
 require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/PHPMailer.php';
 require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/SMTP.php';
 
+// require 'PHPMailer/PHPMailer/src/Exception.php';
+// require 'PHPMailer/PHPMailer/src/PHPMailer.php';
+// require 'PHPMailer/PHPMailer/src/SMTP.php';
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $name = isset($_POST['name']) ? $_POST['name'] : '';
@@ -36,15 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Subject = $subject;
         $mail->Body = "<p> $message </p>";
         $mail->AltBody = $message;
-
-        // Send Email
         if ($mail->send()) {
-            echo "Email sent successfully!";
+            echo json_encode(["status" => "success", "message" => "Message sent successfully!"]);
         } else {
-            echo "Failed to send email.";
+            echo json_encode(["status" => "error", "message" => "Error sending email: " . $mail->ErrorInfo]);
         }
     } catch (Exception $e) {
-        echo "Error: {$mail->ErrorInfo}";
+        echo json_encode(["status" => "error", "message" => "Mailer Error: " . $mail->ErrorInfo]);
     }
 }
 ?>

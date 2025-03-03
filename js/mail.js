@@ -11,7 +11,7 @@ function sendEmail(event) {
     method: "POST",
     body: formData,
   })
-    // .then((response) => response.text()) // Get response from PHP
+    .then((response) => response.text())
     .then((data) => {
       console.log(data);
       // document.getElementById("responseMessage").innerHTML = data;

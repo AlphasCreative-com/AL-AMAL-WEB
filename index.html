@@ -450,25 +450,25 @@
                     </div>
                     <div class="col-md-6">
 
-                        <form id="contactForm" onsubmit="sendEmail">
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control bg-transparent" id="name"
+                                        <input name="name" type="text" class="form-control bg-transparent" id="name"
                                             placeholder="Your Name" required>
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control bg-transparent" id="email"
+                                        <input name="email" type="email" class="form-control bg-transparent" id="email"
                                             placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent datetimepicker-input"
+                                        <input name="subject" type="text" class="form-control bg-transparent datetimepicker-input"
                                             id="subject" placeholder="Subject" required />
                                         <label for="datetime">Subject</label>
                                     </div>
@@ -478,7 +478,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control bg-transparent" placeholder="Special Request"
+                                        <textarea name="message" class="form-control bg-transparent" placeholder="Special Request"
                                             id="message" style="height: 100px" required></textarea>
                                         <label for="message">Type your message</label>
                                     </div>
