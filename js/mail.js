@@ -2,19 +2,27 @@
 function sendEmail(event) {
   event.preventDefault();
 
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var subject = document.getElementById("subject").value;
-  var message = document.getElementById("message").value;
+  let form = document.getElementById("contactForm");
+  let formData = new FormData(form);
 
-  var mailtoLink =
-    "mailto:mraihan278@gmail.com" +
-    "?subject=" +
-    encodeURIComponent(subject) +
-    "&body=" +
-    encodeURIComponent(
-      "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message
-    );
+  let newFormData = {
+    name: "dfdfjdlkf",
+    email: "kmihijaya@gmail.com",
+    subject: "subject",
+  }
 
-  window.location.href = mailtoLink;
+  fetch("send_email.php", {
+    method: "POST",
+    body: newFormData,
+  })
+    // .then((response) => response.text()) // Get response from PHP
+    .then((data) => {
+      console.log(data);
+      // document.getElementById("responseMessage").innerHTML = data;
+      // document.getElementById("responseMessage").style.display = "block";
+      document.getElementById("contactForm").reset(); // Reset form after sending
+    })
+    .catch((error) => console.error("Error:", error));
 }
+
+document.getElementById("contactForm").addEventListener("submit", sendEmail);

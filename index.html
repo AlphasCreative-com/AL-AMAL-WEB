@@ -44,8 +44,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
-    <script src="js/mail.js"></script>
 </head>
 
 
@@ -114,8 +112,11 @@
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h2>Who are we</h2>
-                 
-                    <p> We take pride in being a trusted manpower recruitment agency in Kuwait, dedicated to connecting businesses with top-tier talent from across the globe. With years of experience in the industry, we specialize in providing highly skilled and reliable workers for various sectors, including construction, hospitality, healthcare, engineering, and more.</p>
+
+                    <p> We take pride in being a trusted manpower recruitment agency in Kuwait, dedicated to connecting
+                        businesses with top-tier talent from across the globe. With years of experience in the industry,
+                        we specialize in providing highly skilled and reliable workers for various sectors, including
+                        construction, hospitality, healthcare, engineering, and more.</p>
 
                     <div class="working-hours">
                         <p>MON-FRI: 9 AM - 10 PM</p>
@@ -205,7 +206,7 @@
         </div>
     </div> -->
 
-    
+
 
 
     <!-- blogs Start -->
@@ -446,7 +447,7 @@
                     </div>
                     <div class="col-md-6">
 
-                        <form id="contactForm-01" action="send_email.php" method="POST">
+                        <form id="contactForm" onsubmit="sendEmail">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -557,6 +558,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="js/mail.js"></script>
 </body>
 
 </html>
