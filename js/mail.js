@@ -38,6 +38,8 @@ function sendEmailfromContact(event) {
   let form = document.getElementById("contactForm-contact");
   let formData = new FormData(form);
 
+  formData.append("subject", "Contact Form Submission");
+
   // Get first name and last name from FormData
   let firstName = formData.get("firstname")?.trim() || "";
   let lastName = formData.get("lastname")?.trim() || "";
