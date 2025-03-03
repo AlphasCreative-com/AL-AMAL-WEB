@@ -9,7 +9,7 @@ function sendEmail(event) {
   
   fetch("send_email.php", {
     method: "POST",
-    body: newFormData,
+    body: formData,
   })
     // .then((response) => response.text()) // Get response from PHP
     .then((data) => {
