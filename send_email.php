@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/PHPMailer/src/Exception.php';
-require 'PHPMailer/PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/PHPMailer/src/SMTP.php';
+require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/Exception.php';
+require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/PHPMailer.php';
+require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
