@@ -22,7 +22,7 @@ function sendEmail(event) {
 document.getElementById("contactForm").addEventListener("submit", sendEmail);
 
 // Function to send an email from contact us page
-function sendEmail(event) {
+function sendEmailfromContact(event) {
   event.preventDefault();
 
   let form = document.getElementById("contactForm-contact");
@@ -54,4 +54,4 @@ function sendEmail(event) {
 
 document
   .getElementById("contactForm-contact")
-  .addEventListener("submit", sendEmail);
+  .addEventListener("submit", sendEmailfromContact);
