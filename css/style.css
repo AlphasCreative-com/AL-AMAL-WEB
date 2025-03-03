@@ -365,7 +365,7 @@
 /*** Hero Header ***/
 .hero-header {
   background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
-    url(../img/POM-KUWAIT-18.jpg);
+    url(../img/150kbps.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -791,9 +791,32 @@ h2 {
 .section-description {
   font-size: 1.1rem;
   color: #666;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto 40px;
 }
+
+/*when hovering the text of the a_href command given*/
+.text-from-first{
+  color: #747474;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.text-from-first:hover {
+  color: #e29e0b;
+}
+
+.text-from-first-white{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.text-from-first-white:hover {
+  color: #e29e0b;
+}
+
+
 
 /* Service Cards Grid */
 .service-cards {
@@ -1067,6 +1090,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   text-align: left;
+  color: #000000;
 }
 
 .contact-form,
@@ -1098,6 +1122,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
+  color: #000000;
 }
 
 .contact-form input,
