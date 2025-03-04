@@ -85,7 +85,7 @@ function sendEmailFromEnquiries(event) {
   formData.append("name", fullName);
 
   // Send data via fetch()
-  fetch("php/send_email.php", {
+  fetch("php/send_enquiries.php", {
       method: "POST",
       body: formData,
   })
