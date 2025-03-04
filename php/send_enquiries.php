@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = $_POST["name"];
     $email = $_POST["email"];
     $number = $_POST["number"];
-    $jobs_titles = $_POST["jobs_titles"];
+    $jobstitles = $_POST["jobstitles"];
     $experience = $_POST["experience"];
     $message = $_POST["message"];
 
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p><strong>Name:</strong> $fullName</p>
             <p><strong>Email:</strong> $email</p>
             <p><strong>Mobile Number:</strong> $number</p>
-            <p><strong>Hiring for:</strong> $jobs_titles</p>
+            <p><strong>Hiring for:</strong> $jobstitles</p>
             <p><strong>Experience:</strong> $experience</p>
             <p><strong>Message:</strong><br> $message</p>
         ";
