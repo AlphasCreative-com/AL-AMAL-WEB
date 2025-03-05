@@ -27,7 +27,7 @@ function sendEmail(event) {
   })
     .then((response) => response.text())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       // document.getElementById("responseMessage").innerHTML = data;
       // document.getElementById("responseMessage").style.display = "block";
       document.getElementById("contactForm").reset(); // Reset form after sending
@@ -61,7 +61,7 @@ function sendEmailfromContact(event) {
   })
     .then((response) => response.text())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       // document.getElementById("responseMessage").innerHTML = data;
       // document.getElementById("responseMessage").style.display = "block";
       document.getElementById("contactForm-contact").reset(); // Reset form after sending
@@ -91,7 +91,7 @@ function sendEmailFromEnquiries(event) {
   })
   .then(response => response.text()) // Handle response as text
   .then(data => {
-      console.log("PHP Response:", data);
+      // console.log("PHP Response:", data);
       // alert("Message Sent Successfully!");
       form.reset(); // Reset form after submission
   })

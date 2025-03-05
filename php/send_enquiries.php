@@ -27,9 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL/TLS
         $mail->Port = 465; // Change to 587 if not using SSL
 
-       //Recipients
+        //Recipients
         $mail->setFrom('noreply@alamalmanpower.com', 'Al Amal Manpower');
-        $mail->addAddress('kasunmihijaya@gmail.com', 'Kasun Mihijaya'); // Add a recipient
+        //TODO : Add a recipient
+        $mail->addAddress('receipient_email', 'receipient_name'); // Add a recipient
         $mail->addReplyTo($email, $name);
 
         $mail->Subject = "New Enquiry from $fullName";
