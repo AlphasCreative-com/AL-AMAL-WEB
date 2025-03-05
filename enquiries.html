@@ -33,7 +33,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="js/mail.js"></script>
     <script src="js/enquiries.js"></script>
 </head>
 
@@ -90,13 +89,13 @@
             <div class="contact-content">
                 <!-- Contact Form -->
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm-enquiries">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="First Name" required>
+                            <input type="text" id="name" name="firstname" placeholder="First Name" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Last Name" required>
+                            <input type="text" id="name" name="lastname" placeholder="Last Name" required>
                         </div>
 
                         <div class="form-group">
@@ -107,8 +106,8 @@
                             <input type="email" id="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="jobs-titles">Hiring for:</label>
-                            <select id="jobs-titles" name="jobs-titles" required>
+                            <label for="jobstitles">Hiring for:</label>
+                            <select id="jobstitles" name="jobstitles" required>
                                 <option value="" disabled selected>Select Hiring Role</option>
                                 <option value="House Nurse">House Nurse</option>
                                 <option value="House Boys">House Boys</option>
@@ -116,19 +115,19 @@
                                 <option value="Driver">Driver</option>
                                 <option value="House Maid">House Maid</option>
                                 <option value="Farmer">Farmer</option>
-          
+
                             </select>
                         </div>
 
 
                         <div class="form-group">
-                            <label for="subject">Work Experience:</label>
-                            <select id="subject" name="subject" required>
+                            <label for="experience">Work Experience:</label>
+                            <select id="experience" name="experience" required>
                                 <option value="" disabled selected>Select Experience</option>
-                                <option value="select">Beginner</option>
-                                <option value="item">Experienced</option>
-                             
-          
+                                <option value="Beginner">Beginner</option>
+                                <option value="Experienced">Experienced</option>
+
+
                             </select>
                         </div>
 
@@ -140,10 +139,6 @@
                             <button type="submit">Send Message</button>
                         </div>
                     </form>
-
-                    <script>
-                        document.getElementById("contactForm").addEventListener("submit", sendEmail);
-                    </script>
                 </div>
             </div>
         </div>
@@ -156,7 +151,8 @@
             <!-- Logo Section -->
             <div class="footer-section logo">
                 <img src="img/Logo Horizontal.png" alt="Company Logo" class="footer-logo">
-                <p class="mb-4" style="text-align: left;">Al-Amal Manpower, we specialize in providing highly skilled and
+                <p class="mb-4" style="text-align: left;">Al-Amal Manpower, we specialize in providing highly skilled
+                    and
                     dedicated professionals across various industries in Kuwait. we connect businesses with the right
                     talent, ensuring efficiency, reliability, and success.</p>
             </div>
@@ -181,7 +177,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2025 Al-Amal Manpower, All Rights Reserved | Powered by <a href="https://www.alphascreative.com/" class="text-from-first-white">Alphas Creative</a>
+            &copy; 2025 Al-Amal Manpower, All Rights Reserved | Powered by <a href="https://www.alphascreative.com/"
+                class="text-from-first-white">Alphas Creative</a>
         </div>
     </footer>
 
@@ -206,6 +203,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="js/mail.js"></script>
 </body>
 
 </html>
