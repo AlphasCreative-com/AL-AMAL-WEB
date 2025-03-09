@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465; // Change to 587 if not using SSL
 
         //Recipients
-        $mail->setFrom('noreply@alamalmanpower.com', 'Al Amal Manpower');
+        $mail->setFrom('noreply@alamalmanpower.com', 'Noreply Al Amal Manpower');
         //TODO : Add a recipient
-        $mail->addAddress('receipient_email', 'receipient_name'); // Add a recipient
+        $mail->addAddress('info@alamalmanpower.com', 'Al Amal Manpower'); // Add a recipient
         $mail->addReplyTo($email, $name);
 
         $mail->Subject = "New Enquiry from $fullName";
