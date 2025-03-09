@@ -12,14 +12,14 @@ require '/home/alampnnj/test.alamalmanpower.com/PHPMailer/src/SMTP.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+
     $name = isset($_POST['name']) ? $_POST['name'] : '';
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $subject = isset($_POST['subject']) ? $_POST['subject'] : '';
     $message = isset($_POST['message']) ? $_POST['message'] : '';
 
     $mail = new PHPMailer(true);
-    
+
     try {
         // SMTP Configuration
         $mail->SMTPDebug = 2;
@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL/TLS
         $mail->Port = 465; // Change to 587 if not using SSL
 
-       //Recipients
-        $mail->setFrom('noreply@alamalmanpower.com', 'Al Amal Manpower');
+        //Recipients
+        $mail->setFrom('noreply@alamalmanpower.com', 'Noreply Al Amal Manpower');
         //TODO : Add a recipient
-        $mail->addAddress('receipient_email', 'receipient_name'); // Add a recipient
+        $mail->addAddress('info@alamalmanpower.com', 'Al Amal Manpower');
         $mail->addReplyTo($email, $name);
 
         // Content
