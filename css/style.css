@@ -539,6 +539,13 @@ h2 {
   height: 510px;
 }
 
+.package-item-text{
+  height: 300px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .package-item img {
   transition: 0.5s;
 }
