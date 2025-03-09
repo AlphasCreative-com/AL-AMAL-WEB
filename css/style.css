@@ -2239,7 +2239,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff6a6a, #ffcc70);
+  background: linear-gradient(270deg, #ffb29e, #ffc496, #ff9393, #ffcc70);
   background-size: 400% 400%;
   animation: GradientAnimation 10s ease infinite;
   color: white;
