@@ -536,6 +536,7 @@ h2 {
 /*** Package ***/
 .package-item {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  height: 510px;
 }
 
 .package-item img {
@@ -623,6 +624,10 @@ h2 {
   .testimonial-carousel::after {
     width: 300px;
   }
+}
+
+.testimonial-item{
+  height: 400px;
 }
 
 .testimonial-carousel .owl-item .testimonial-item,
