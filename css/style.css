@@ -1,10 +1,21 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 /********** Template CSS **********/
 :root {
   --primary: #e29e0b;
   --secondary: #fe8800;
-  --light: #f5f5f5;
+  --light: #ffffff;
   --dark: #14141f;
 }
+
+
+
+button{font-family:"poppins", sans-serif;}
+div,button,span,strong,h1.h2{font-family:"poppins", sans-serif;}
 
 .fw-medium {
   font-weight: 600 !important;
@@ -735,17 +746,17 @@ h2 {
 .card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(184, 184, 184, 0.1);
   width: 250px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
 }
 
 /* Card hover effect */
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(75, 75, 75, 0.2);
 }
 
 /* Card title */
@@ -845,7 +856,7 @@ h2 {
 /* Service Icon */
 .service-icon {
   font-size: 2.5rem;
-  color: #6a11cb;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -1118,7 +1129,7 @@ body {
 .form-group select {
   appearance: none; /* Remove default arrow */
   background-color: #fff;
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("../img/bg-hero.jpg");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 12px;
@@ -2219,3 +2230,33 @@ body {
     margin-bottom: 40px;
   }
 }
+
+
+
+.gradient-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff6a6a, #ffcc70);
+  background-size: 400% 400%;
+  animation: GradientAnimation 10s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+@keyframes GradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
