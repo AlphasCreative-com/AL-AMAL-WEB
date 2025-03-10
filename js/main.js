@@ -174,9 +174,11 @@ function animateNumber(element, targetNumber, duration) {
 // Animate the numbers
 const projectsElement = document.getElementById("projects");
 const awardsElement = document.getElementById("awards");
+const employeesElement = document.getElementById("employees")
 
-animateNumber(projectsElement, 250, 2000); // 250 projects, 2 seconds duration
-animateNumber(awardsElement, 50, 2000); // 50 awards, 2 seconds duration
+animateNumber(projectsElement, 50, 2000); // 250 projects, 2 seconds duration
+animateNumber(awardsElement, 20, 2000); // 50 awards, 2 seconds duration
+animateNumber(employeesElement, 10, 2000); // 50 awards, 2 seconds duration
 
 
 

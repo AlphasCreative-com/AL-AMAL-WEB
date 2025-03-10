@@ -15,7 +15,7 @@
 
 
 button{font-family:"poppins", sans-serif;}
-div,button,span,strong,h1,h2{font-family:"poppins", sans-serif;}
+div,button,span,strong,h2{font-family:"poppins", sans-serif  !important;}
 
 .fw-medium {
   font-weight: 600 !important;
