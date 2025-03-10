@@ -15,7 +15,8 @@
 
 
 button{font-family:"poppins", sans-serif;}
-div,button,span,strong,h2{font-family:"poppins", sans-serif  !important;}
+button,span,strong,h2{font-family:"poppins", sans-serif  !important;
+ font-weight: 600 !important; }
 
 .fw-medium {
   font-weight: 600 !important;
@@ -1639,6 +1640,12 @@ body {
  padding: 20px;
  margin: 20px auto;
  
+}
+
+.gtitle{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 
