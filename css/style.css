@@ -15,7 +15,7 @@
 
 
 button{font-family:"poppins", sans-serif;}
-div,button,span,strong,h1.h2{font-family:"poppins", sans-serif;}
+div,button,span,strong,h1,h2{font-family:"poppins", sans-serif;}
 
 .fw-medium {
   font-weight: 600 !important;
@@ -1633,6 +1633,16 @@ body {
 }
 
 .gallery {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ padding: 20px;
+ margin: 20px auto;
+ 
+}
+
+
+.gallerycrd{
   max-width: 1200px;
   margin: 50px auto;
   display: grid;
