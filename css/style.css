@@ -377,7 +377,7 @@ button,span,strong,h2{font-family:"poppins", sans-serif  !important;
 /*** Hero Header ***/
 .hero-header {
   background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
-    url(../img/gifkuwait.gif);
+    url(../img/tower_home_page.gif);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -555,10 +555,11 @@ h2 {
   transform: scale(1.1);
 }
 
-/*** Booking ***/
+/*** Contact Form Home***/
 .booking {
   background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)),
-    url(../img/night.jpeg);
+    url(../img/Banner.jpg
+    );
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1863,8 +1864,8 @@ body {
   padding: 80px 20px;
   background: linear-gradient(
     135deg,
-    #e9e9e9,
-    #e7e7e7
+    #ffe2a8,
+    #ffd883
   ); /* Gradient background */
   color: #fff;
   text-align: center;
@@ -2145,7 +2146,7 @@ h2 {
   left: 50%;
   width: 80%;
   height: 2px;
-  background-color: #0073b1; /* Match your brand color */
+  background-color: #d39207; /* Match your brand color */
   transform: translateX(-50%);
   z-index: 1;
 }
