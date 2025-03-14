@@ -377,7 +377,7 @@ button,span,strong,h2{font-family:"poppins", sans-serif  !important;
 /*** Hero Header ***/
 .hero-header {
   background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)),
-    url(../img/tower_home_page.gif);
+    url(../img/homebanner.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
