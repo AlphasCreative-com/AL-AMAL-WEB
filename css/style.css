@@ -2288,7 +2288,7 @@ body {
 }
 
 .gradient-section h2,p{
-  color: #fff;
+  color: #555;
 }
 
 @keyframes GradientAnimation {
