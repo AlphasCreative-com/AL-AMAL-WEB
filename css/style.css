@@ -1,8 +1,4 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /********** Template CSS **********/
 :root {
@@ -12,11 +8,16 @@
   --dark: #14141f;
 }
 
-
-
-button{font-family:"poppins", sans-serif;}
-button,span,strong,h2{font-family:"poppins", sans-serif  !important;
- font-weight: 600 !important; }
+button {
+  font-family: "poppins", sans-serif;
+}
+button,
+span,
+strong,
+h2 {
+  font-family: "poppins", sans-serif !important;
+  font-weight: 600 !important;
+}
 
 .fw-medium {
   font-weight: 600 !important;
@@ -540,7 +541,7 @@ h2 {
   height: 510px;
 }
 
-.package-item-text{
+.package-item-text {
   height: 300px !important;
   display: flex;
   flex-direction: column;
@@ -558,8 +559,7 @@ h2 {
 /*** Contact Form Home***/
 .booking {
   background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)),
-    url(../img/Banner.jpg
-    );
+    url(../img/Banner.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -635,7 +635,7 @@ h2 {
   }
 }
 
-.testimonial-item{
+.testimonial-item {
   height: 400px;
 }
 
@@ -821,7 +821,7 @@ h2 {
 }
 
 /*when hovering the text of the a_href command given*/
-.text-from-first{
+.text-from-first {
   color: #747474;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
@@ -831,7 +831,7 @@ h2 {
   color: #e29e0b;
 }
 
-.text-from-first-white{
+.text-from-first-white {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
@@ -840,8 +840,6 @@ h2 {
 .text-from-first-white:hover {
   color: #e29e0b;
 }
-
-
 
 /* Service Cards Grid */
 .service-cards {
@@ -1236,13 +1234,12 @@ body {
   margin-bottom: 50px;
 }
 
-
-.jtitle{
+.jtitle {
   display: flex;
   justify-content: space-between;
 }
 
-.jtitle img{
+.jtitle img {
   height: 36px;
   width: 36px;
 }
@@ -1647,28 +1644,29 @@ body {
 }
 
 .gallery {
- display: flex;
- flex-direction: column;
- width: 100%;
- padding: 20px;
- margin-top: 50px ;
- 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
 }
 
-.gtitle{
+.gtitle {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-
-.gallerycrd{
-  max-width: 1200px;
-  margin: 20px auto;
+.gallerycontent {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
   padding: 20px;
+}
+
+.gallerycrd {
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 .gallery img {
@@ -2002,7 +2000,7 @@ h2 {
 
 .icon {
   font-size: 48px;
-  color:#e29e0b; /* Match your brand color */
+  color: #e29e0b; /* Match your brand color */
   margin-bottom: 20px;
   transition: color 0.3s ease;
 }
@@ -2273,35 +2271,32 @@ body {
   }
 }
 
-
-
 .gradient-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)), url(../img/tower_home_page.gif);
+  background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)),
+    url(../img/tower_home_page.gif);
   background-size: cover;
   background-position: center;
   text-align: center;
 }
 
-.gradient-section h2,p{
+.gradient-section h2,
+p {
   color: #555;
 }
 
 @keyframes GradientAnimation {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
-
-
-
