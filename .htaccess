@@ -1,3 +1,7 @@
 RewriteEngine On
+
+# Exclude images from redirection
+RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|png|gif|svg|webp)$ [NC]
+
 RewriteCond %{REQUEST_URI} !/maintenance.html$ [NC]
 RewriteRule ^(.*)$ /maintenance.html [R=302,L]
