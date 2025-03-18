@@ -1,3 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !/maintenance.html$ [NC]
 RewriteRule ^(.*)$ /maintenance.html [R=302,L]
+AddType image/svg+xml .svg
