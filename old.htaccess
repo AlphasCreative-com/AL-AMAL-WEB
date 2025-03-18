@@ -1,0 +1,15 @@
+# BEGIN Custom Rewrite Rules
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase 
+
+    # Remove .html extension from URLs
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L,QSA]
+
+    # Redirect .html requests to clean URLs (without the .html extension)
+    RewriteCond %{REQUEST_URI} ^/(.*)\.html$
+    RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+</IfModule>
+# END Custom Rewrite Rules
